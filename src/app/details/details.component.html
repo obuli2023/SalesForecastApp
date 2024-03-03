@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<h1 class="form-title">Sales Prediction</h1>
+<div class ="wrapper">
+<form  (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="csvFile">CSV File</label>
+    <input type="file" accept=".csv" class="form-control-file" id="csvFile"  (change)="onFileSelected($event)" #csvFileInput>
+  </div>
+  <label for="periodicity">Select periodicity:</label>
+    <select name="periodicity" id="periodicity" (change)="onPeriodicityChange($event)">
+      <option value="">-Select-</option>
+      <option value="D">Days</option>
+      <option value="W">Weeks</option>
+      <option value="M">Months</option>
+      <option value="Y">Years</option>
+    </select><br><br>
+
+    <label for="periods">Enter number of periods:</label>
+    <input type="number" name="periods" id="periods" (change)="onPeriodsChange($event)"><br><br>
+
+    <input type="submit" value="Upload and Predict">
+</form>
+</div>
+<br>
+<br>
+<div>{{ responseData }}</div>

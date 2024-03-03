@@ -1,0 +1,19 @@
+
+.content{
+  
+  background:rgba(255, 255, 255, .25); border-radius: 10px; width: 58%; height: 100%;
+        box-shadow: rgb(38, 57, 77) 20px 20px 30px -10px;
+        box-sizing: content-box;
+        margin-left: 260px;
+        text-align: left;
+        text-decoration-style: solid;
+        
+        
+         
+}
+.text-color{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
